@@ -31,7 +31,7 @@ class Casino{
         }
     }
 
-    betMt = async (numberToBet, money = 1) =>{
+    betMT = async (numberToBet, money = 1) =>{
         const path = `http://95.217.177.249/casino/playMt?id=${this.account.id}&bet=${money}&number=${numberToBet}`;
         try{
             const res = await axios.get(path);
